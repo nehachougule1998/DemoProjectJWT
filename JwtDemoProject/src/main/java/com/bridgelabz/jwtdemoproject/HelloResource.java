@@ -1,0 +1,12 @@
+package com.bridgelabz.jwtdemoproject;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloResource {
+    @RequestMapping({"/Hello"})
+    public String firstpage(){
+        return "Hello World";
+    }
+}
